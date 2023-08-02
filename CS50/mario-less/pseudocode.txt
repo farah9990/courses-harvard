@@ -1,0 +1,4 @@
+repeat to if between 1 & 8 go to remander code
+get how match line in i where == height and decrease that py loop
+get how match space for all line to r py use loop for each line
+get  how match # for remander line to j py use loop for each
