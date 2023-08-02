@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    sell
+{% endblock %}
+
+{% block main %}
+    <h1>your goals</h1>
+    <form action="/done" method="post">
+        <select name="goal" >
+            {% for symbol in symbols %}
+                <option>{{symbol["goal"]}}</option>
+            {% endfor %}
+        </select>
+        <button class="btn btn-primary" type="submit">done</button>
+    </form>
+{% endblock %}

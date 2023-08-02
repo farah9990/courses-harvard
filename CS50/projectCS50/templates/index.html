@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolip
+{% endblock %}
+
+{% block main %}
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">goal</th>
+        <th scope="col">details</th>
+        <th scope="col">state</th>
+        <th scope="col">time</th>
+
+      </tr>
+    </thead>
+    <tbody>
+        {% for row in database %}
+            <tr>
+
+                <td>{{row["goal"]}}</td>
+                <td>{{row["details"]}}</td>
+                <td>{{row["state"]}}</td>
+                <td>{{ row["time"]}}</td>
+
+           </tr>
+
+            {%endfor%}
+
+
+
+
+
+    </tbody>
+
+  </table>
+
+{% endblock %}

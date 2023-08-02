@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    New Goal
+{% endblock %}
+
+{% block main %}
+    <h1>New Goal</h1>
+    <form action="/new" method="post">
+
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="goal" name="goal" placeholder="goal" type="text">
+        </div>
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="details" name="details" placeholder="details" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">add</button>
+    </form>
+{% endblock %}
