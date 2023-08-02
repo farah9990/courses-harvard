@@ -1,0 +1,1 @@
+introdation in computer sintec
