@@ -1,0 +1,1 @@
+SELECT name FROM songs WHERE artist_id IN (SELECT id from artists where name like "Post Malone");
